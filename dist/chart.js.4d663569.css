@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --clr-black: #000;
+}
+
+.acquisitions-chart {
+  width: 800px;
+}
+
+.dimensions-chart {
+  width: 500px;
+}
+/*# sourceMappingURL=chart.js.4d663569.css.map */
