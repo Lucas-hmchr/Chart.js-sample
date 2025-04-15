@@ -676,13 +676,39 @@ var _api = require("./api");
     new (0, _autoDefault.default)(document.getElementById('acquisitionsChart'), {
         type: 'bar',
         options: {
-            animation: false,
+            animation: true,
             plugins: {
                 legend: {
-                    display: false
+                    display: true,
+                    labels: {
+                        color: '#fff'
+                    }
                 },
                 tooltip: {
-                    enabled: false
+                    enabled: false,
+                    titleColor: '#fff',
+                    bodyColor: '#fff',
+                    // Optional: Tooltip-Rahmen, falls benötigt:
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        color: '#fff'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                y: {
+                    ticks: {
+                        color: '#fff'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
                 }
             }
         },

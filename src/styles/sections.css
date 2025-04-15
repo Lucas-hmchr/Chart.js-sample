@@ -1,0 +1,7 @@
+.chart-section{
+    padding-left: 32px;
+    & h2{
+        color: white;
+        padding: 64px 0px 16px;
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,23 @@
     <script type="module" src="./scripts/acquisitions.js"></script>
     <script type="module" src="./scripts/dimensions.js"></script>
 </head>
+
 <body>
-    <div class="dimensions-chart"><canvas id="dimensionsChart"></canvas></div>
-    <br/>
-    <div class="acquisitions-chart"><canvas id="acquisitionsChart"></canvas></div>
-    
+    <header>
+        <h1>Chart.js - Sample page</h1>
+    </header>
+
+    <main>
+        <div class="chart-section">
+            <h2>Dimensions Chart</h2>
+            <div class="dimensions-chart"><canvas id="dimensionsChart"></canvas></div>
+        </div>
+        <div class="chart-section">
+            <h2>Acquisitions Chart</h2>
+            <div class="acquisitions-chart"><canvas id="acquisitionsChart"></canvas></div>
+        </div>
+    </main>
+
 </body>
+
 </html>

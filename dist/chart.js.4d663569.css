@@ -9,12 +9,23 @@ body {
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+  background-color: var(--clr-black);
+  color: #fff;
+  padding: 32px;
+}
+
+main {
+  background-color: var(--clr-main-bg);
+}
+
 a {
   text-decoration: none;
 }
 
 :root {
   --clr-black: #000;
+  --clr-main-bg: #181818;
 }
 
 .acquisitions-chart {
@@ -23,5 +34,14 @@ a {
 
 .dimensions-chart {
   width: 500px;
+}
+
+.chart-section {
+  padding-left: 32px;
+
+  & h2 {
+    color: #fff;
+    padding: 64px 0 16px;
+  }
 }
 /*# sourceMappingURL=chart.js.4d663569.css.map */

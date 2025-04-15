@@ -710,6 +710,38 @@ var _api = require("./api");
                         5
                     ],
                     borderDashOffset: 2
+                },
+                legend: {
+                    display: true,
+                    labels: {
+                        color: '#fff'
+                    }
+                }
+            },
+            tooltip: {
+                enabled: false,
+                titleColor: '#fff',
+                bodyColor: '#fff',
+                // Optional: Tooltip-Rahmen, falls benötigt:
+                borderColor: '#fff',
+                borderWidth: 1
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        color: '#fff'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                y: {
+                    ticks: {
+                        color: '#fff'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
                 }
             }
         },

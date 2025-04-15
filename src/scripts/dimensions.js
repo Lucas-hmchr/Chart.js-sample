@@ -35,14 +35,47 @@ import { getDimensions } from './api'
                 max: 500
             }
         },
+        
         plugins: {
             chartAreaBorder: {
               borderColor: 'red',
               borderWidth: 2,
               borderDash: [ 5, 5 ],
               borderDashOffset: 2,
-            }
+            },
+            legend: {
+              display: true,
+              labels: {
+                color: '#fff'
+              }
+            },
         },
+        tooltip: {
+          enabled: false,
+          titleColor: '#fff', // Tooltip-Titel in weiß
+          bodyColor: '#fff',  // Tooltip-Text in weiß
+          // Optional: Tooltip-Rahmen, falls benötigt:
+          borderColor: '#fff',
+          borderWidth: 1
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: '#fff',
+            },
+            grid: {
+              color: 'rgba(255, 255, 255, 0.1)'
+            }
+          },
+          y: {
+            ticks: {
+              color: '#fff'
+            },
+            grid: {
+              color: 'rgba(255, 255, 255, 0.1)'
+            }
+          }
+        }
       },
       data: {
         labels: data.map(x => x.year),

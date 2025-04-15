@@ -9,10 +9,21 @@ body{
     height: 100vh;
 }
 
+header{
+    background-color: var(--clr-black);
+    color: white;
+    padding: 32px;
+}
+
+main{
+    background-color: var(--clr-main-bg);
+}
+
 a {
     text-decoration: none;
 }
 
 :root {
     --clr-black: #000000;
+    --clr-main-bg: rgb(24, 24, 24);
 }
