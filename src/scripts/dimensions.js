@@ -24,7 +24,6 @@ import { getDimensions } from './api'
     document.getElementById('dimensionsChart'),
     {
       type: 'bubble',
-      plugins: [ chartAreaBorder ],
       options: {
         aspectRatio: 1,
         scales: {
@@ -37,12 +36,6 @@ import { getDimensions } from './api'
         },
         
         plugins: {
-            chartAreaBorder: {
-              borderColor: 'red',
-              borderWidth: 2,
-              borderDash: [ 5, 5 ],
-              borderDashOffset: 2,
-            },
             legend: {
               display: true,
               labels: {

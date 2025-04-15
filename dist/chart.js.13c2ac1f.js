@@ -688,9 +688,6 @@ var _api = require("./api");
     };
     new (0, _autoDefault.default)(document.getElementById('dimensionsChart'), {
         type: 'bubble',
-        plugins: [
-            chartAreaBorder
-        ],
         options: {
             aspectRatio: 1,
             scales: {
@@ -702,15 +699,6 @@ var _api = require("./api");
                 }
             },
             plugins: {
-                chartAreaBorder: {
-                    borderColor: 'red',
-                    borderWidth: 2,
-                    borderDash: [
-                        5,
-                        5
-                    ],
-                    borderDashOffset: 2
-                },
                 legend: {
                     display: true,
                     labels: {
